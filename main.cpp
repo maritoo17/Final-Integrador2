@@ -62,8 +62,16 @@ void load_script(const char* filename, bool show_script = false)
     }
 }
 
-int main() {
-    load_script("main.cpp", true);
-    return 0;
+void load_script(){
+    char filename[500];
+    printf("Archivo: ");
+    scanf("%499s", filename);
+    load_script(filename, true);
 }
+
+int main()
+{
+    load_script();
+}
+
 
