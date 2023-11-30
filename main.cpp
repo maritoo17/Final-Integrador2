@@ -62,5 +62,8 @@ void load_script(const char* filename, bool show_script = false)
     }
 }
 
-
+int main() {
+    load_script("main.cpp", true);
+    return 0;
+}
 
